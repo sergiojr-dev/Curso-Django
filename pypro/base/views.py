@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 
 def home(request):
-    return HttpResponse('Olá django"')
+    return HttpResponse('Olá django')
