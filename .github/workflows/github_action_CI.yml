@@ -42,7 +42,9 @@ jobs:
       run: cp .env.example .env
 
     - name: Run Tests
-      run: pipenv run python manage.py test
+      run: |
+        export ALLOWED_HOSTS="${{ secrets.ALLOWED_HOSTS }}"
+        python manage.py test
         
 
   deploy:
