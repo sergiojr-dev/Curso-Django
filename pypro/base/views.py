@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('Olá django')
+    return HttpResponse('Olá django fazendo deploy no dia 3-06')
