@@ -27,6 +27,8 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool, default=False)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+# ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.fly.dev']
+
 
 AUTH_USER_MODEL = 'base.User'
 
